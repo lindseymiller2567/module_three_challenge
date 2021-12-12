@@ -65,7 +65,16 @@ function generatePassword() {
     console.log(passwordLowerCase, passwordUpperCase, passwordNumeric, passwordSpecial)
   };
 
-// add a for loop here.... 
+  // creates empty string which will be filled with a value from the below for loop
+  var randomPassword = "";
+
+  // this 'for loop' will access a random item in each characters array by generating a random float from zero to the array's length, and rounding it to it's nearest whole number 
+  for (var i = 0; i < length; i++) {
+    randomPassword += randomCharacters[Math.floor(Math.random() * randomCharacters.length)];
+  }
+  console.log("The random password is " + randomPassword);
+
+  return randomPassword;
 
 };
 
