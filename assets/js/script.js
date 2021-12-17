@@ -1,4 +1,3 @@
-// Assignment code here
 // Get references to the #generate element
 // References the ID 'generate' in the HTML document. Tells the browser to link the 'generate' ID with the variable generateBtn. 
 var generateBtn = document.querySelector("#generate");
@@ -23,7 +22,7 @@ function generatePassword() {
   };
   console.log("Length of password: " + length);
 
-  // choose lowercase?
+  // Asks user if they want to include lower case
   var passwordLowerCase = window.confirm("Do you want to include lower case letters in your password?");
   if (passwordLowerCase === true) {
     console.log("User choose to include lower case letters");
@@ -31,7 +30,7 @@ function generatePassword() {
     console.log("Random Characters: " + randomCharacters);
   };
 
-  // choose uppercase?
+  // Asks user if they want to include upper case
   var passwordUpperCase = window.confirm("Do you want to include upper case letters in your password?");
   if (passwordUpperCase === true) {
     console.log("User choose to include upper case letters");
@@ -39,7 +38,7 @@ function generatePassword() {
     console.log("Random Characters: " + randomCharacters);
   };
 
-  // choose numbers?
+  // Asks user if they want to include numbers
   var passwordNumeric = window.confirm("Do you want to include numbers in your password?");
   if (passwordNumeric === true) {
     console.log("User choose to include numbers");
@@ -47,7 +46,7 @@ function generatePassword() {
     console.log("Random Characters: " + randomCharacters);
   };
 
-  // choose special characters?
+  // Asks user if they want to include special characters
   var passwordSpecial = window.confirm("Do you want to include special characters in your password?");
   if (passwordSpecial === true) {
     console.log("User choose to include special characters");
